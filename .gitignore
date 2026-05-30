@@ -1,7 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies
-/node_modules
+# ── Dependencies ──────────────────────────────────────────────────────────────
+node_modules/
 /.pnp
 .pnp.*
 .yarn/*
@@ -10,32 +10,38 @@
 !.yarn/releases
 !.yarn/versions
 
-# testing
-/coverage
-
-# next.js
+# ── Build outputs ─────────────────────────────────────────────────────────────
 /.next/
 /out/
-
-# production
 /build
+server/dist/
 
-# misc
+# ── Environment & secrets ──────────────────────────────────────────────────────
+# All .env files with real values MUST stay local — never commit these.
+.env
+.env.local
+.env.*.local
+# Keep the example templates (they contain no real secrets)
+!.env.example
+!server/.env.example
+
+# ── Prisma generated client ────────────────────────────────────────────────────
+/src/generated/prisma
+
+# ── Vercel ────────────────────────────────────────────────────────────────────
+.vercel
+
+# ── TypeScript build info ─────────────────────────────────────────────────────
+*.tsbuildinfo
+next-env.d.ts
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+/coverage
+
+# ── Misc ──────────────────────────────────────────────────────────────────────
 .DS_Store
 *.pem
-
-# debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
-
-# env files (can opt-in for committing if needed)
-.env*
-
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
