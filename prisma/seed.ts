@@ -1,8 +1,29 @@
+// Load env vars first — ts-node does NOT auto-load .env or .env.local
+// Must be at the very top before any other import that reads process.env
+import * as dotenv from "dotenv"
+import * as path from "path"
+import * as fs from "fs"
+
+const localEnv = path.resolve(process.cwd(), ".env.local")
+if (fs.existsSync(localEnv)) dotenv.config({ path: localEnv })
+dotenv.config() // fallback: loads .env (won't overwrite already-set vars)
+
 import { PrismaClient } from "@prisma/client"
 import { PrismaPg } from "@prisma/adapter-pg"
 
-const adapter = new PrismaPg({ connectionString: process.env.DATABASE_URL! })
+if (!process.env.DATABASE_URL) {
+  throw new Error("DATABASE_URL is not set. Add it to .env.local or .env before running the seed.")
+}
+
+// For seeding via pooler: add connection_limit=1 to avoid pool exhaustion
+const rawUrl = process.env.DATABASE_URL
+const connectionString = rawUrl.includes("?")
+  ? `${rawUrl}&connection_limit=1`
+  : `${rawUrl}?connection_limit=1`
+
+const adapter = new PrismaPg({ connectionString })
 const prisma = new PrismaClient({ adapter })
+
 
 interface SeedPassage {
   text: string
