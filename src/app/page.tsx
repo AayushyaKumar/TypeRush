@@ -3,11 +3,7 @@ import Link from "next/link"
 export default function Home() {
   return (
     <main className="max-w-5xl mx-auto px-4 sm:px-6 py-10 sm:py-16 md:py-24 flex flex-col items-center text-center">
-      {/* Badge / Announcement */}
-      <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-semibold mb-6 animate-fade-in">
-        <span>✨ Version 2.0 Live</span>
-        <span className="w-1.5 h-1.5 rounded-full bg-primary animate-ping" />
-      </div>
+     
 
       {/* Hero Typography */}
       <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight max-w-3xl mb-4 sm:mb-6">
