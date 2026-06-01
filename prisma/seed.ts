@@ -32,81 +32,13 @@ interface SeedPassage {
 }
 
 const passages: SeedPassage[] = [
-  // ═══════════════════════════════════════════════════════════════════
-  //  50-WORD PASSAGES (~48–55 words each)
-  // ═══════════════════════════════════════════════════════════════════
-
-  // ── Easy · 50 words ───────────────────────────────────────────────
-  {
-    text: "The morning sun cast golden light across the quiet neighborhood. Birds sang from the treetops while a gentle breeze rustled through the leaves. Children walked to school with backpacks bouncing on their shoulders. A dog barked playfully behind a white picket fence. It was another beautiful, ordinary day.",
-    difficulty: "easy",
-    category: "general",
-  },
-  {
-    text: "Reading is one of the best habits a person can develop. Books open doors to new worlds and ideas that we might never experience otherwise. Whether you enjoy fiction or nonfiction, there is always something new to learn. Even twenty minutes a day can make a real difference.",
-    difficulty: "easy",
-    category: "general",
-  },
-  {
-    text: "Cooking at home is a wonderful skill that everyone should learn. It saves money, promotes healthier eating, and can be a fun creative outlet. Start with simple recipes that use just a few ingredients. Over time you will build confidence and learn to experiment with new flavors.",
-    difficulty: "easy",
-    category: "general",
-  },
-  {
-    text: "Learning to code starts with understanding the basics. Variables store information, loops repeat actions, and conditions let your program make decisions. Every programmer begins with simple programs that print messages to the screen. The best way to learn is by doing and building small projects.",
-    difficulty: "easy",
-    category: "programming",
-  },
-  {
-    text: "Water is one of the most important substances on Earth. It covers about seventy percent of the planet and is essential for all forms of life. Water exists in three states: solid ice, liquid water, and gas as steam. Conserving water protects our environment for future generations.",
-    difficulty: "easy",
-    category: "science",
-  },
-  {
-    text: "Stories have been part of human culture for thousands of years. Long before books existed, people gathered around fires to share tales of adventure, love, and mystery. A good story can transport you to another time and place, making you feel emotions deeply and changing how you see life.",
-    difficulty: "easy",
-    category: "literature",
-  },
-
-  // ── Medium · 50 words ─────────────────────────────────────────────
-  {
-    text: "Effective communication requires more than just speaking clearly. It involves active listening, reading body language, and understanding the emotional context behind someone's words. Many conflicts arise not from disagreement but from miscommunication. Taking time to paraphrase what you have heard ensures mutual understanding in professional and personal settings.",
-    difficulty: "medium",
-    category: "general",
-  },
-  {
-    text: "Version control systems like Git have fundamentally transformed collaborative software development. Every change is tracked with a commit message explaining the rationale behind modifications. Branches allow developers to work independently without disrupting the stable codebase. Pull requests facilitate code review, enabling team members to catch bugs early.",
-    difficulty: "medium",
-    category: "programming",
-  },
-  {
-    text: "The human brain contains approximately eighty-six billion neurons, each forming thousands of synaptic connections with neighboring cells. Neuroplasticity, the brain's ability to reorganize itself by forming new neural connections throughout life, challenges the outdated notion that brain structure is permanently fixed after early childhood development.",
-    difficulty: "medium",
-    category: "science",
-  },
-
-  // ── Hard · 50 words ───────────────────────────────────────────────
-  {
-    text: "Distributed consensus algorithms such as Raft and Paxos solve the fundamental problem of achieving agreement among multiple nodes in a fault-tolerant distributed system. These protocols must handle network partitions, message delays, and node failures while maintaining linearizability guarantees essential for building reliable large-scale production infrastructure.",
-    difficulty: "hard",
-    category: "programming",
-  },
-  {
-    text: "Quantum entanglement represents one of the most counterintuitive phenomena in modern physics. When two particles become entangled, measuring a property of one instantaneously determines the corresponding property of the other, regardless of spatial separation. This nonlocal phenomenon forms the theoretical foundation for quantum cryptography and teleportation protocols.",
-    difficulty: "hard",
-    category: "science",
-  },
-  {
-    text: "The philosophical implications of artificial general intelligence encompass fundamental questions about consciousness, moral agency, and the nature of understanding itself. The Chinese Room argument, proposed by philosopher John Searle, challenges computational theories of mind by suggesting that syntactic manipulation of symbols cannot produce genuine semantic comprehension.",
-    difficulty: "hard",
-    category: "general",
-  },
+ 
 
   // ═══════════════════════════════════════════════════════════════════
   //  100-WORD PASSAGES (~95–105 words each)
   // ═══════════════════════════════════════════════════════════════════
 
-  // ── Easy · 100 words ──────────────────────────────────────────────
+
   {
     text: "Traveling to new places is one of the most rewarding experiences in life. When you visit a different city or country, you get to see how other people live, what they eat, and how they celebrate. Even small trips can teach you something new about the world and about yourself. Packing for a trip is part of the fun. You think about what you will need, check the weather, and make a list. When you arrive somewhere new, everything feels exciting. The streets look different, the food smells different, and the sounds are unfamiliar.",
     difficulty: "easy",
@@ -150,19 +82,19 @@ const passages: SeedPassage[] = [
     category: "literature",
   },
 
-  // ── Hard · 100 words ──────────────────────────────────────────────
+  // ── Hard · ~185 words ─────────────────────────────────────────────
   {
-    text: "The epistemological foundations of scientific knowledge have been subjected to rigorous philosophical scrutiny since Karl Popper's articulation of falsificationism. Popper argued that the demarcation between science and pseudoscience lies not in the verifiability of hypotheses but in their falsifiability: a genuinely scientific theory must make predictions that could, in principle, be contradicted by empirical observation. Thomas Kuhn subsequently complicated this picture with his concept of paradigm shifts, arguing that scientific progress does not proceed through linear accumulation of knowledge but through revolutionary transformations replacing existing frameworks with fundamentally incompatible alternatives.",
+    text: "The hard problem of consciousness, as formulated by philosopher David Chalmers, draws a crucial distinction between explaining the functional and behavioral correlates of mental states and explaining why those processes are accompanied by subjective experience at all. Neuroscience has made remarkable progress characterizing the neural correlates of consciousness, identifying the brain regions and network dynamics associated with different states of awareness. Yet this scientific progress, according to Chalmers, addresses only what he calls the easy problems: explaining how the brain integrates information, discriminates stimuli, and generates reports about its own internal states. The genuinely hard problem is explaining why any of these computational processes feel like something from the inside, why there is subjective experience accompanying neural activity rather than information processing occurring in the dark without any experiential quality whatsoever. Physicalist responses range from eliminativism, which denies that phenomenal consciousness exists as commonly conceived, to functionalism, which argues that mental states are entirely defined by their causal and functional roles. Panpsychist alternatives propose that experiential properties are fundamental features of physical reality rather than emergent products of sufficiently complex neural information processing systems.",
     difficulty: "hard",
     category: "general",
   },
   {
-    text: "The lambda calculus, developed by Alonzo Church in the 1930s, provides the theoretical foundation for functional programming languages. In its pure form, lambda calculus consists of only three constructs: variables, function abstraction through lambda expressions, and function application. Despite this minimal syntax, lambda calculus is Turing-complete, capable of expressing any computable function through systematic application of substitution rules known as beta reduction. Church encoding demonstrates this universality by representing natural numbers, boolean values, and data structures as pure functions without any primitive data types.",
+    text: "Type systems serve as formal frameworks for reasoning about the correctness of programs before they execute, catching entire categories of errors that would otherwise surface only at runtime in production environments. The Hindley-Milner type inference algorithm, foundational to languages like Haskell, OCaml, and Rust, infers the most general type of an expression without requiring explicit annotations from the programmer. This algorithm exploits the structure of lambda calculus to derive type constraints and resolve them through unification, producing principal types that capture all possible valid instantiations. Parametric polymorphism, commonly known as generics, allows functions and data structures to operate over type variables that are instantiated differently at each call site while maintaining strong type safety guarantees. Dependent types, as implemented in Idris and Coq, extend this further by allowing types to depend on runtime values, enabling programmers to express properties such as vector length invariants directly within the type system. The Curry-Howard correspondence reveals a profound theoretical connection, establishing a bijection between type-theoretic proofs and functional programs, such that writing a well-typed function is equivalent to constructing a constructive mathematical proof of its type signature.",
     difficulty: "hard",
     category: "programming",
   },
   {
-    text: "The standard model of particle physics represents humanity's most comprehensive description of fundamental particles and the forces governing their interactions. It categorizes all known elementary particles into fermions, which constitute matter, and bosons, which mediate forces. Fermions are further divided into quarks, which combine to form protons and neutrons through the strong nuclear force, and leptons, which include electrons and neutrinos. The electromagnetic force is mediated by photons, the weak nuclear force by W and Z bosons, and the strong force by gluons.",
+    text: "Einstein's general theory of relativity revolutionized our understanding of gravity by reconceptualizing it not as a force transmitted between massive objects but as a curvature of spacetime geometry caused by the presence of mass and energy. The field equations relating spacetime curvature to energy-momentum distribution are nonlinear partial differential equations whose solutions describe everything from the expansion of the universe to the interior structure of black holes. Schwarzschild derived the first exact solution shortly after Einstein published his equations, describing the spacetime geometry surrounding a non-rotating spherically symmetric mass and predicting the existence of a region from which no information can escape: what we now call the event horizon. Gravitational waves, oscillations propagating through the fabric of spacetime at the speed of light, were predicted by general relativity but considered unmeasurable for decades due to their extraordinarily small amplitude. The LIGO detector's first direct observation in 2015, detecting spacetime distortions smaller than a thousandth the diameter of a proton produced by two merging black holes over a billion light-years distant, constituted one of the most remarkable experimental achievements in the history of physics.",
     difficulty: "hard",
     category: "science",
   },
@@ -205,24 +137,24 @@ const passages: SeedPassage[] = [
     category: "science",
   },
 
-  // ── Hard · 150 words ──────────────────────────────────────────────
+  // ── Hard · ~185 words ─────────────────────────────────────────────
   {
-    text: "The theoretical framework underlying modern cryptographic systems relies on computational complexity theory, specifically the assumed intractability of certain mathematical problems for which no efficient classical algorithm is known. Public-key cryptography, introduced by Diffie and Hellman in 1976 and subsequently implemented through the RSA algorithm, depends on the practical impossibility of factoring the product of two sufficiently large prime numbers. The security guarantee is asymmetric: multiplying two primes is computationally trivial, but reversing this operation requires time that grows exponentially with input size, rendering brute-force approaches infeasible for keys of adequate length. Elliptic curve cryptography provides equivalent security with substantially shorter key lengths by exploiting the difficulty of the discrete logarithm problem on elliptic curves over finite fields. However, the emergence of quantum computing threatens these foundational assumptions. Shor's algorithm demonstrates that a sufficiently powerful quantum computer could factor large integers in polynomial time, breaking current cryptographic protections.",
+    text: "Cognitive biases represent systematic errors in human judgment that arise from the mental shortcuts, known as heuristics, which our brains rely upon to navigate an overwhelming volume of daily information. While these heuristics generally serve us well, allowing rapid decisions without exhaustive deliberation, they produce predictable distortions in reasoning under specific conditions. Confirmation bias leads individuals to disproportionately seek and interpret information that confirms their existing beliefs while discounting contradictory evidence. The availability heuristic causes people to estimate the probability of events based on how easily examples come to mind, inflating perceived risk for vivid occurrences and underestimating statistically more common hazards. Anchoring bias demonstrates that initial numerical information, even when irrelevant, exerts disproportionate influence on subsequent quantitative judgments. Daniel Kahneman's framework of System One and System Two thinking provides a theoretical structure for understanding these phenomena, distinguishing between fast automatic associative cognition and slow deliberate rule-governed reasoning. Effective decision-making in high-stakes environments requires cultivating awareness of these biases, implementing structured decision processes, seeking disconfirming evidence deliberately, and engaging reflective cognition precisely when intuitive answers arrive with the greatest subjective confidence.",
     difficulty: "hard",
     category: "general",
   },
   {
-    text: "Garbage collection algorithms represent a fundamental tradeoff in programming language design between developer productivity and runtime performance predictability. Manual memory management, as practiced in C and C++, provides fine-grained control over allocation and deallocation but introduces entire categories of defects including memory leaks, dangling pointer dereferences, double frees, and buffer overflows. Automatic garbage collection eliminates these errors by periodically identifying and reclaiming memory no longer reachable from the program's root set. Reference counting maintains a counter for each allocated object and deallocates when the count reaches zero, but fails to reclaim circular references. Tracing collectors periodically traverse the object graph from root references, handling cycles naturally but introducing pause times. Generational garbage collection exploits the empirical observation that most objects die young by partitioning the heap and collecting younger generations more frequently, dramatically reducing average collection overhead in practice.",
+    text: "Distributed consensus algorithms such as Raft and Paxos address one of the most fundamental challenges in computer science: achieving agreement among multiple nodes in a system where any participant may fail or become unreachable at any time. The CAP theorem, formulated by Eric Brewer, establishes a theoretical ceiling on what distributed systems can guarantee, proving that no system can simultaneously provide consistency, availability, and partition tolerance. When network partitions occur, engineers must choose between returning potentially stale data and refusing to respond entirely. Raft was designed explicitly to be more understandable than Paxos while providing equivalent correctness guarantees. It decomposes consensus into leader election, log replication, and safety, ensuring that committed log entries are never overwritten. A leader is elected by obtaining votes from a majority of nodes, guaranteeing that only one leader exists per term. All client requests are routed through the leader, which replicates entries to followers before acknowledging success. This majority-quorum requirement ensures that any two successful operations share at least one common node, preserving linearizability even across leader transitions, network partitions, and complete node recoveries in large production deployments.",
     difficulty: "hard",
     category: "programming",
   },
   {
-    text: "The emergence of antibiotic resistance represents one of the most pressing public health crises of the twenty-first century, threatening to reverse decades of medical progress. Alexander Fleming's discovery of penicillin inaugurated the antibiotic era, providing clinicians with powerful tools against bacterial pathogens. However, evolutionary pressure ensures that bacterial populations exposed to antibiotics inevitably develop resistance through spontaneous mutation and horizontal gene transfer. Mechanisms include enzymatic degradation of the antibiotic molecule, modification of the molecular target, upregulation of efflux pumps, and decreased membrane permeability. The crisis has been exacerbated by inappropriate prescribing for viral infections, patient noncompliance with treatment courses, widespread use of antibiotics as growth promoters in livestock agriculture, and environmental contamination from pharmaceutical manufacturing. Multi-drug resistant organisms now present significant treatment challenges in clinical settings worldwide, while the pharmaceutical pipeline for novel antibiotic classes has simultaneously contracted.",
+    text: "The second law of thermodynamics, perhaps the most profound and far-reaching principle in all of physics, states that the total entropy of an isolated system never decreases over time. Entropy, loosely understood as a measure of disorder or the number of microstates compatible with a given macrostate, increases inexorably in all spontaneous processes. This asymmetry defines the thermodynamic arrow of time, distinguishing past from future in a universe whose fundamental microscopic laws are time-symmetric. The statistical mechanics interpretation developed by Ludwig Boltzmann provided a molecular basis for thermodynamic phenomena, expressing entropy as the logarithm of the number of accessible microstates. Boltzmann's H-theorem demonstrated how irreversible macroscopic behavior emerges from reversible microscopic dynamics through the action of overwhelming probability. The apparent contradiction between microscopic reversibility and macroscopic irreversibility was reconciled by recognizing that the enormously greater number of high-entropy states makes entropy-decreasing fluctuations vanishingly improbable for any macroscopic system. Maxwell's Demon thought experiment revealed deep connections between information, measurement, and thermodynamic work, while Landauer's principle ultimately established that erasing a single bit of information necessarily dissipates a minimum quantity of energy as heat into the surrounding environment.",
     difficulty: "hard",
     category: "science",
   },
   {
-    text: "The literary movement known as magical realism, while most prominently associated with Latin American fiction, has roots extending across multiple cultural traditions. Distinguished from pure fantasy by its grounding in recognizable reality into which supernatural elements intrude without explanation, magical realism treats the extraordinary as entirely ordinary. Gabriel Garcia Marquez's One Hundred Years of Solitude exemplifies this through its chronicle of the Buendia family, where characters ascend into heaven, prophecies determine destiny, and a rain of yellow flowers accompanies death. These events are narrated with the same matter-of-fact tone applied to mundane domestic activities. Critics have interpreted magical realism as a postcolonial narrative strategy, representing reality as experienced by communities whose worldviews encompass spiritual dimensions that Western rationalism excludes. By refusing to privilege empirical observation over alternative epistemologies, the genre challenges the cultural hegemony of Enlightenment rationality.",
+    text: "James Joyce's Ulysses represents perhaps the most ambitious and technically complex novel in the English literary tradition, transplanting Homer's Odyssey to a single day in Dublin in 1904. The novel follows Leopold Bloom, an advertising canvasser, through eighteen episodes corresponding loosely to episodes in the Homeric epic. Each episode employs a distinct narrative style, shifting between interior monologue, dramatic dialogue, journalistic prose, and an elaborate parody of English literary history that spans several centuries. The stream of consciousness technique reaches its fullest expression in Molly Bloom's unpunctuated soliloquy, which concludes the novel in a torrent of associative thought spanning forty-five pages without a single period. Joyce's use of the epiphany, a sudden crystallization of meaning in ordinary moments, reflects his belief that genuine insight emerges not through extraordinary events but through heightened attention to the textures of daily experience. The novel's notorious difficulty has generated an entire scholarly industry devoted to annotation and interpretation. Critics remain divided on whether this difficulty is productive, forcing readers into an active role that enriches meaning, or merely self-indulgent obscurantism unnecessarily excluding casual readers.",
     difficulty: "hard",
     category: "literature",
   },
